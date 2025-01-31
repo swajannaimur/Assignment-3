@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazar Shodai</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a2f42c1dee.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        .sora-font {
+            font-family: "Sora"
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        accent: '#179800',
+                        secondary: '#EFEBE3',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="sora-font">
+    <!-- header -->
+    <header class="bg-gradient-to-b from-white to-secondary px-4 ">
+        <section class="max-w-7xl mx-auto my-4  ">
+            <div class="flex justify-between items-center">
+                <!-- logo -->
+                 <div>
+                    <img src="images/logo-mobile.png" alt="" class="lg:hidden">
+                 </div>
+                <div>
+                    <img src="images/logo-header.png" alt="" class="hidden lg:block">
+                </div>
+                <!-- menus -->
+                <div class="hidden lg:block">
+                    <ul class="flex items-center text-xl space-x-8">
+                        <li><a href="" class="hover:text-accent">Product</a></li>
+                        <li><a href="" class="hover:text-accent">Services</a></li>
+                        <li><a href="" class="hover:text-accent">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- buttons -->
+                <div class="hidden lg:block space-x-4 text-xl">
+                    <i class="fa-solid fa-magnifying-glass hover:text-accent"></i>
+                    <i class="fa-solid fa-cart-shopping hover:text-accent"></i>
+                    <button
+                        class="border-2 border-accent px-8 py-3 rounded-lg hover:text-white hover:bg-accent transition-all">Login</button>
+                    <button
+                        class="border-2 border-accent px-8 py-3 rounded-lg bg-accent text-white hover:text-accent hover:bg-white transition-all">Register</button>
+                </div>
+                <!-- Hamburger -->
+                <i class="fa-solid fa-bars text-4xl text-accent lg:hidden"></i>
+            </div>
+        </section>
+
+        <!-- banner section -->
+        <section class="text-center mt-20 max-w-7xl mx-auto my-4 px-4">
+            <div>
+                <h2 class="text-3xl md:text-5xl font-bold">Freshness <span class="text-accent">You Can <br>
+                        Count </span> On, Prices You’ll Love!</h2>
+                <p class="my-8 text-xl md:px-56">Shop your daily essentials at unbeatable prices. From fresh produce to
+                    pantry staples, we’ve got you
+                    covered every day!</p>
+            </div>
+            <div>
+                <img src="images/hero-vegetables.png" alt="" class="mx-auto">
+            </div>
+        </section>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- services -->
+        <section class="max-w-7xl mx-auto my-36 px-4">
+            <div>
+                <h2 class="text-4xl font-semibold text-accent mb-12">Services</h2>
+            </div>
+            <div class="flex gap-6 flex-col md:flex-row">
+                <div class="text-center border-1 bg-secondary rounded-2xl p-8">
+                    <img src="images/service.png" alt="" class="mx-auto">
+                    <h2 class="text-2xl font-semibold mt-6 mb-4">24/7 Services </h2>
+                    <p class="text-xl font-light">Access support and assistance anytime, ensuring a seamless shopping
+                        experience, day or night.</p>
+                </div>
+                <div class="text-center border-1 bg-secondary rounded-2xl p-8">
+                    <img src="images/delivery.png" alt="" class="mx-auto">
+                    <h2 class="text-2xl font-semibold mt-6 mb-4">Fast Delivery</h2>
+                    <p class="text-xl font-light">Get your orders delivered swiftly, with reliable and prompt service
+                        right to your doorstep.</p>
+                </div>
+                <div class="text-center border-1 bg-secondary rounded-2xl p-8">
+                    <img src="images/healthy.png" alt="" class="mx-auto">
+                    <h2 class="text-2xl font-semibold mt-6 mb-4">Healthy Products</h2>
+                    <p class="text-xl font-light">Browse a wide range of nutritious, high-quality products, promoting a
+                        healthy lifestyle for all.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Popular Products -->
+        <section class="bg-secondary">
+            <div class="max-w-7xl mx-auto py-36 px-4">
+                <!-- Text -->
+                <div>
+                    <h2 class="text-4xl font-semibold text-accent mb-12">Popular Products</h2>
+                </div>
+                <div class=" grid grid-cols-2 lg:grid-cols-5 grid-rows-3 gap-4">
+                    <div class="rounded-xl bg-gradient-to-br from-accent to-white col-span-2 row-span-3 relative">
+                        <div class="py-11 md:py-24 px-8 space-y-2">
+                            <h2 class="font-bold text-3xl text-white"> 30% Off</h2>
+                            <p class="text-base pr-28">Discover a world of treats, toys, and essentials handpicked for
+                            </p>
+                            <button
+                                class="border-2  px-6 py-3 rounded-lg text-black bg-white text-xl hover:border-black hover:text-accent hover:border-3 transition-all">Buy
+                                Now</button>
+                        </div>
+                        <img src="images/vegetable-offer.png" alt="" class="absolute right-4 bottom-0 w-1/2 sm:w-1/4 lg:w-1/2">
+                    </div>
+                    <div class="p-2  border-2 bg-white flex gap-4 justify-center items-center rounded-xl">
+                        <div>
+                            <img src="images/onion.png" alt="" class="p-2 bg-secondary rounded-xl">
+                        </div>
+                        <div>
+                            <div class="flex gap-3">
+                                <i class="fa-solid fa-star text-base text-yellow-400"></i>
+                                <h2 class="text-base">4.5</h2>
+                            </div>
+                            <p class="text-base md:text-xl font-medium">Onion 1kg</p>
+                            <p class="text-base font-medium">$39.99</p>
+
+                        </div>
+                    </div>
+                    <div class="p-2  border-2 bg-white flex gap-4 justify-center items-center rounded-xl">
+                        <div>
+                            <img src="images/corn.png" alt="" class="p-2 bg-secondary rounded-xl">
+                        </div>
+                        <div>
+                            <div class="flex gap-3">
+                                <i class="fa-solid fa-star text-base text-yellow-400"></i>
+                                <h2 class="text-base">4.5</h2>
+                            </div>
+                            <p class="text-base md:text-xl font-medium">Corn 1kg</p>
+                            <p class="text-base font-medium">$29.99</p>
+
+                        </div>
+                    </div>
+                    <div class="p-2  border-2 bg-white flex gap-4 justify-center items-center rounded-xl">
+                        <div>
+                            <img src="images/tomato.png" alt="" class="p-2 bg-secondary rounded-xl">
+                        </div>
+                        <div>
+                            <div class="flex gap-3">
+                                <i class="fa-solid fa-star text-base text-yellow-400"></i>
+                                <h2 class="text-base">4.5</h2>
+                            </div>
+                            <p class="text-base md:text-xl font-medium">Tomato 1kg</p>
+                            <p class="text-base font-medium">$25.99</p>
+
+                        </div>
+                    </div>
+                    <div class="p-2  border-2 bg-white flex gap-4 justify-center items-center rounded-xl">
+                        <div>
+                            <img src="images/potato.png" alt="" class="p-2 bg-secondary rounded-xl">
+                        </div>
+                        <div>
+                            <div class="flex gap-3">
+                                <i class="fa-solid fa-star text-base text-yellow-400"></i>
+                                <h2 class="text-base">4.5</h2>
+                            </div>
+                            <p class="text-base md:text-xl font-medium">Potato 1kg</p>
+                            <p class="text-base font-medium">$15.99</p>
+
+                        </div>
+                    </div>
+                    <div class="p-2  border-2 bg-white flex gap-4 justify-center items-center rounded-xl">
+                        <div>
+                            <img src="images/kale.png" alt="" class="p-2 bg-secondary rounded-xl">
+                        </div>
+                        <div>
+                            <div class="flex gap-3">
+                                <i class="fa-solid fa-star text-base text-yellow-400"></i>
+                                <h2 class="text-base">4.5</h2>
+                            </div>
+                            <p class="text-base md:text-xl font-medium">Kale 1kg</p>
+                            <p class="text-base font-medium">$18.99</p>
+
+                        </div>
+                    </div>
+                    <div class="p-2  border-2 bg-white flex gap-4 justify-center items-center rounded-xl">
+                        <div>
+                            <img src="images/okra.png" alt="" class="p-2 bg-secondary rounded-xl">
+                        </div>
+                        <div>
+                            <div class="flex gap-3">
+                                <i class="fa-solid fa-star text-base text-yellow-400"></i>
+                                <h2 class="text-base">4.5</h2>
+                            </div>
+                            <p class="text-base md:text-xl font-medium">Okra 1kg</p>
+                            <p class="text-base font-medium">$49.99</p>
+
+                        </div>
+                    </div>
+                    <div class="p-2  border-2 bg-white flex gap-4 justify-center items-center rounded-xl">
+                        <div>
+                            <img src="images/pea.png" alt="" class="p-2 bg-secondary rounded-xl">
+                        </div>
+                        <div>
+                            <div class="flex gap-3">
+                                <i class="fa-solid fa-star text-base text-yellow-400"></i>
+                                <h2 class="text-base">4.5</h2>
+                            </div>
+                            <p class="text-base md:text-xl font-medium">Pea 1kg</p>
+                            <p class="text-base font-medium">$32.99</p>
+
+                        </div>
+                    </div>
+                    <div class="p-2  border-2 bg-white flex gap-4 justify-center items-center rounded-xl">
+                        <div>
+                            <img src="images/yam.png" alt="" class="p-2 bg-secondary rounded-xl">
+                        </div>
+                        <div>
+                            <div class="flex gap-3">
+                                <i class="fa-solid fa-star text-base text-yellow-400"></i>
+                                <h2 class="text-base">4.5</h2>
+                            </div>
+                            <p class="text-base md:text-xl font-medium">Yam 1kg</p>
+                            <p class="text-base font-medium">$14.99</p>
+
+                        </div>
+                    </div>
+                    <div class="hidden lg:block">
+                        <div class=" p-4 border-2 bg-white flex gap-4 justify-center items-center rounded-xl ">
+                            <div>
+                                <img src="images/taro.png" alt="" class="p-2 bg-secondary rounded-xl">
+                            </div>
+                            <div>
+                                <div class="flex gap-3">
+                                    <i class="fa-solid fa-star text-base text-yellow-400"></i>
+                                    <h2 class="text-base">4.5</h2>
+                                </div>
+                                <p class="text-base md:text-xl font-medium">Taro 1kg</p>
+                                <p class="text-base font-medium">$27.99</p>
+    
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                   
+                    
+                    
+                    
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+
+    </footer>
+</body>
+
+</html>
