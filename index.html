@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bazar Shodai</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo-mobile.png" type="">
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Daisy UI Connect -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -72,7 +76,8 @@
         <!-- banner section -->
         <section class="text-center mt-20 max-w-7xl mx-auto my-4 px-4 ">
             <div>
-                <h2 class="text-3xl md:text-5xl font-bold animate-bounce">Freshness <span class="text-accent">You Can <br>
+                <h2 class="text-3xl md:text-5xl font-bold animate-bounce">Freshness <span class="text-accent">You Can
+                        <br>
                         Count </span> On, Prices You’ll Love!</h2>
                 <p class="my-8 text-xl md:px-56">Shop your daily essentials at unbeatable prices. From fresh produce to
                     pantry staples, we’ve got you
@@ -83,10 +88,9 @@
             </div>
         </section>
     </header>
-
     <!-- main -->
     <main>
-        <!-- services -->
+        <!-- Services -->
         <section class="max-w-7xl mx-auto my-36 px-4">
             <div>
                 <h2 class="text-4xl font-semibold text-accent mb-12">Services</h2>
@@ -112,6 +116,7 @@
                 </div>
             </div>
         </section>
+        
         <!-- Popular Products -->
         <section class="bg-secondary">
             <div class="max-w-7xl mx-auto py-36 px-4">
@@ -272,8 +277,9 @@
                 </div>
             </div>
         </section>
+
         <!-- Arrivals and Offers -->
-        <section class="max-w-7xl mx-auto mt-36 mb-96 px-4">
+        <section class="max-w-7xl mx-auto my-36 px-4">
             <div>
                 <h2 class="text-4xl font-semibold text-accent mb-12">Arrivals & Offers</h2>
             </div>
@@ -310,8 +316,65 @@
                 </div>
             </div>
         </section>
+
+        <!-- Reviews -->
+        <section class="max-w-7xl mx-auto mb-96 px-4">
+            <div>
+                <h2 class="text-4xl font-semibold text-accent mb-12">Quick Queries</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="collapse collapse-plus bg-accent">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium text-white">What is Bazar Shodai?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-secondary">Bazar Shodai is an online platform offering daily essentials at
+                            unbeatable prices, including fresh produce and pantry staples.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-accent">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium text-white">What services does Bazar Shodai provide?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-secondary">We offer 24/7 customer support, fast delivery to your doorstep, and a
+                            wide range of healthy, high-quality products to promote a healthy lifestyle.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-accent">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium text-white">How can I place an order?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-secondary">Browse our product categories, add desired items to your cart, and
+                            proceed to checkout. You can log in or register to manage your orders and track deliveries.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-accent">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium text-white">How can I contact customer support?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-secondary">You can reach out to us through the 'Contact Us' section on our
+                            website for any inquiries or assistance.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-accent">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title text-xl font-medium text-white">Is your delivery service available
+                        throughout Dhaka city?
+                    </div>
+                    <div class="collapse-content">
+                        <p class="text-secondary">We try to provide delivery services across all major areas of Dhaka.
+                            Please enter your delivery address during checkout to confirm service availability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <!-- footer section -->
+
+    <!-- Footer section -->
     <footer class="relative bg-accent px-4 ">
         <!-- Newsletter Section -->
         <section
@@ -367,8 +430,6 @@
             </div>
         </div>
     </footer>
-
-
 </body>
 
 </html>
